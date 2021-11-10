@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavbarBrand, Collapse, NavItem, NavLink } from 'reactstrap';
+import { CartWidget } from '../CartWidget/CartWidget.js';
 
 export const NavBar = () => {
     return (
@@ -9,7 +10,6 @@ export const NavBar = () => {
                 color="dark"
                 dark
                 expand="md"
-                fixed="top"
                 light
             >
                 <NavbarBrand href="/">
@@ -37,7 +37,7 @@ export const NavBar = () => {
                         </NavItem>
                         <NavItem className="ms-auto">
                             <NavLink href="">
-                                Carrito
+                                <CartWidget />
                             </NavLink>
                         </NavItem>
                     </Nav>
