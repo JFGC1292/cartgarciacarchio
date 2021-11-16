@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Button } from 'reactstrap'
-import './ItemCount.css'
 import { AiFillMinusCircle } from "react-icons/ai"
 import { AiFillPlusCircle } from "react-icons/ai"
+import './ItemCount.css'
 
 export const ItemCount = ({ stock, initial, onAdd }) => {
 
