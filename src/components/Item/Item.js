@@ -6,8 +6,8 @@ export const Item = ({ id, title, color, price, pictureUrl }) => {
             <img src={pictureUrl} alt={title} />
             <div className="card-body">
                 <h3 className="card-title">{title}</h3>
-                <p className="card-text">Precio: ${price}</p>
-                <p className="card-text">{color}</p>
+                <p className="card-text">Precio: USD {price}</p>
+                <p className="card-text">Color: {color}</p>
                 <button className="btn btn-primary">Agregar</button>
             </div>
         </article>
