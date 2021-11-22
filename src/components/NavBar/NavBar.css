@@ -1,0 +1,21 @@
+.container-fluid {
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+a {
+    align-self: center;
+    justify-self: center;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(0, 190, 159);
+}
+
+.cartWidget {
+    align-self: flex-end;
+}

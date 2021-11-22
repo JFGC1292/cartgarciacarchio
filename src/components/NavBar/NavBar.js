@@ -1,7 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, NavbarBrand, Collapse, NavItem, NavLink } from 'reactstrap';
+import { Navbar, Nav, NavbarBrand, Collapse, NavItem } from 'reactstrap';
 import { CartWidget } from '../CartWidget/CartWidget.js';
+import { Link } from 'react-router-dom';
+import '../NavBar/NavBar.css'
 
 export const NavBar = () => {
     return (
@@ -12,8 +14,8 @@ export const NavBar = () => {
                 expand="md"
                 light
             >
-                <NavbarBrand href="/">
-                    Logo
+                <NavbarBrand>
+                    <Link to="/">Logo</Link>
                 </NavbarBrand>
                 <Collapse navbar>
                     <Nav
@@ -21,24 +23,16 @@ export const NavBar = () => {
                         navbar
                     >
                         <NavItem>
-                            <NavLink href="">
-                                Productos
-                            </NavLink>
+                            <Link to="/products/remeras">Remeras</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="">
-                                Preguntas frecuentes
-                            </NavLink>
+                            <Link to="/products/buzos">Buzos</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="">
-                                ¿Quiénes somos?
-                            </NavLink>
+                            <Link to="/products/zapatillas">Zapatillas</Link>
                         </NavItem>
-                        <NavItem className="ms-auto">
-                            <NavLink href="">
-                                <CartWidget />
-                            </NavLink>
+                        <NavItem className="ms-auto cartWidget">
+                            <Link to="/cart"><CartWidget /></Link>
                         </NavItem>
                     </Nav>
                 </Collapse>
