@@ -15,6 +15,7 @@ export const ItemListContainer = () => {
         setLoading(true)
         getData()
             .then((resp) => {
+
                 if (!catId) {
                     setProducts(resp)
                 } else {

@@ -23,13 +23,13 @@ export const NavBar = () => {
                         navbar
                     >
                         <NavItem>
-                            <Link to="/products/remeras">Remeras</Link>
+                            <Link to="/productos/guitarras">Guitarras</Link>
                         </NavItem>
                         <NavItem>
-                            <Link to="/products/buzos">Buzos</Link>
+                            <Link to="/productos/bajos">Bajos</Link>
                         </NavItem>
                         <NavItem>
-                            <Link to="/products/zapatillas">Zapatillas</Link>
+                            <Link to="/productos/baterias">Baterías</Link>
                         </NavItem>
                         <NavItem className="ms-auto cartWidget">
                             <Link to="/cart"><CartWidget /></Link>

@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router'
 import './ItemDetail.css'
 
-export const ItemDetail = ({ id, title, catId, price, pictureUrl }) => {
+export const ItemDetail = ({ title, color, price, pictureUrl }) => {
 
     const navigate = useNavigate()
 
@@ -18,7 +18,7 @@ export const ItemDetail = ({ id, title, catId, price, pictureUrl }) => {
         <div>
             <h2>{title}</h2>
             <img src={pictureUrl} alt={title} className="itemImg" />
-            <p>{catId}</p>
+            <p>Color: {color}</p>
             <p>Precio: ${price}</p>
 
             {/* contador con opcion de agregar */}
