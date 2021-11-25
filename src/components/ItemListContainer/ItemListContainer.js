@@ -8,7 +8,8 @@ export const ItemListContainer = () => {
     const [loading, setLoading] = useState(false)
     const [products, setProducts] = useState([])
 
-    const { catId } = useParams()
+    const { param } = useParams()
+    console.log(useParams())
 
     useEffect(() => {
 
@@ -16,10 +17,10 @@ export const ItemListContainer = () => {
         getData()
             .then((resp) => {
 
-                if (!catId) {
+                if (!param) {
                     setProducts(resp)
                 } else {
-                    setProducts(resp.filter(prod => prod.catId === catId))
+                    setProducts(resp.filter(prod => prod.catId === param))
                 }
             })
             .catch((error) => {
@@ -29,7 +30,7 @@ export const ItemListContainer = () => {
                 setLoading(false)
             })
 
-    }, [catId])
+    }, [param])
 
     return (
         <>

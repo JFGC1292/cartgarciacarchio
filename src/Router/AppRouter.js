@@ -8,8 +8,7 @@ export const AppRouter = () => {
 
     const routes = useRoutes([
         { path: "/", element: <ItemListContainer /> },
-        { path: "/productos/:catId", element: <ItemListContainer /> },
-        { path: "/productos/:colorId", element: <ItemListContainer /> },
+        { path: "/productos/:param", element: <ItemListContainer /> },
         { path: "/detail/:itemId", element: <ItemDetailContainer /> },
         { path: "/cart", element: <CartView /> },
         { path: "*", element: <Navigate to="/" /> }
