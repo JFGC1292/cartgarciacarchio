@@ -2,3 +2,12 @@
     display: inline;
     margin: 1rem 4rem;
 }
+
+#addToCartBtn {
+    display: block;
+}
+
+.addSubtractBtn{
+    color: white;
+    background-color:rgb(70, 70, 70);
+}

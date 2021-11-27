@@ -5,7 +5,8 @@ export const stock = [
         color: "rojo",
         price: 419.99,
         pictureUrl: "https://media.guitarcenter.com/is/image/MMGS7/J50178000002000-00-2000x2000.jpg",
-        catId: "baterias"
+        catId: "baterias",
+        stock: 4
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const stock = [
         color: "negro",
         price: 399.99,
         pictureUrl: "https://media.guitarcenter.com/is/image/MMGS7/L75574000004000-00-2000x2000.jpg",
-        catId: "baterias"
+        catId: "baterias",
+        stock: 9
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const stock = [
         color: "negro",
         price: 279.97,
         pictureUrl: "https://media.guitarcenter.com/is/image/MMGS7/J56102000002000-00-2000x2000.jpg",
-        catId: "baterias"
+        catId: "baterias",
+        stock: 3
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const stock = [
         color: "rojo",
         price: 709.99,
         pictureUrl: "https://media.guitarcenter.com/is/image/MMGS7/J07120000004000-00-2000x2000.jpg",
-        catId: "baterias"
+        catId: "baterias",
+        stock: 1
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const stock = [
         color: "negro",
         price: 709.99,
         pictureUrl: "https://media.guitarcenter.com/is/image/MMGS7/J07117000005000-00-2000x2000.jpg",
-        catId: "baterias"
+        catId: "baterias",
+        stock: 5
     }
     ,
     {
@@ -46,7 +51,8 @@ export const stock = [
         color: "beige",
         price: 629.99,
         pictureUrl: "https://media.guitarcenter.com/is/image/MMGS7/L79165000001000-02-2000x2000.jpg",
-        catId: "guitarras"
+        catId: "guitarras",
+        stock: 8
     }
     ,
     {
@@ -55,7 +61,8 @@ export const stock = [
         color: "azul",
         price: 2549.99,
         pictureUrl: "https://media.guitarcenter.com/is/image/MMGS7/L84242000001000-02-2000x2000.jpg",
-        catId: "guitarras"
+        catId: "guitarras",
+        stock: 10
     }
     ,
     {
@@ -64,15 +71,16 @@ export const stock = [
         color: "negro",
         price: 249.99,
         pictureUrl: "https://media.guitarcenter.com/is/image/MMGS7/K82303000001001-02-2000x2000.jpg",
-        catId: "bajos"
-    }
-    ,
+        catId: "bajos",
+        stock: 5
+    },
     {
         id: 9,
         title: "Fender Player Jazz",
         color: "Beige",
         price: 799.99,
         pictureUrl: "https://media.guitarcenter.com/is/image/MMGS7/L22046000004000-02-2000x2000.jpg",
-        catId: "bajos"
+        catId: "bajos",
+        stock: 11
     }
 ]
