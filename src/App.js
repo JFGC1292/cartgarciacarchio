@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { NavBar } from "./components/NavBar/NavBar.js"
-import { AppRouter } from './Router/AppRouter.js';
+import { AppRouter } from './Router/AppRouter.js'
+import { CartProvider } from './components/CartContext/CartContext'
 
 function App() {
 
@@ -10,13 +11,14 @@ function App() {
   // }
 
   return (
-    <BrowserRouter>
+    <CartProvider>
 
-      <NavBar />
+      <BrowserRouter>
+        <NavBar />
+        <AppRouter />
+      </BrowserRouter>
 
-      <AppRouter />
-
-    </BrowserRouter >
+    </CartProvider>
   );
 }
 

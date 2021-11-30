@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../Item/Item.css'
 
 export const Item = ({ id, title, color, price, pictureUrl }) => {
     return (
@@ -9,7 +10,7 @@ export const Item = ({ id, title, color, price, pictureUrl }) => {
                 <h3 className="card-title">{title}</h3>
                 <p className="card-text">Precio: USD {price}</p>
                 <p className="card-text">Color: {color}</p>
-                <Link to={`/detail/${id}`} className="btn btn-primary">Ver</Link>
+                <Link to={`/detail/${id}`} className="btn btn-primary itemBtn">Ver</Link>
             </div>
         </article>
     )
