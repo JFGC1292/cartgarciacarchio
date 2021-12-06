@@ -32,7 +32,7 @@ export const NavBar = () => {
                             <Link to="/productos/baterias">Baterías</Link>
                         </NavItem>
                         <NavItem className="ms-auto cartWidget">
-                            <Link to="/cart"><CartWidget /></Link>
+                            <CartWidget />
                         </NavItem>
                     </Nav>
                 </Collapse>

@@ -7,6 +7,16 @@ export const CartView = () => {
 
     const { cart, emptyCart } = useContext(CartContext)
 
+    if (cart.length === 0) {
+        return (
+            <div className="container my-5">
+                <h2>No agregaste items al carrito aún</h2>
+                <hr />
+                <Link to="/" className="btn btn-primary">Volver</Link>
+            </div>
+        )
+    }
+
     return (
         <div className="container my-5">
             {

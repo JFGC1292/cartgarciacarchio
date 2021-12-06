@@ -3,6 +3,7 @@ import { Button } from 'reactstrap'
 // import { AiFillMinusCircle } from "react-icons/ai"
 // import { AiFillPlusCircle } from "react-icons/ai"
 import './ItemCount.css'
+import { btnConfig } from './btnConfig'
 
 export const ItemCount = ({ maxStock, setQuantity, quantity, onAdd }) => {
 
@@ -16,18 +17,24 @@ export const ItemCount = ({ maxStock, setQuantity, quantity, onAdd }) => {
         quantity < maxStock && setQuantity(quantity + 1)
     }
 
+    const config = btnConfig(quantity, maxStock, handleAdd, handleSubtract)
+
     return (
         <div className="my-3">
-            <Button className="btn btn-outline-primary addSubtractBtn" onClick={handleSubtract}>
+            <Button {...config.subtract}>
                 -
             </Button>
             <span className="mx-2">{quantity}</span>
-            <Button className="btn btn-primary addSubtractBtn" onClick={handleAdd}>
+            <Button {...config.add}>
                 +
             </Button>
-            <Button id="addToCartBtn" className="btn btn-success my-4" onClick={onAdd}>
+            <button
+                className="btn btn-success my-2"
+                onClick={onAdd}
+                disabled={quantity === 0}
+            >
                 Agregar al carrito
-            </Button>
+            </button>
         </div>
     )
 }
