@@ -29,6 +29,7 @@ export const ItemCount = ({ maxStock, setQuantity, quantity, onAdd }) => {
                 +
             </Button>
             <button
+                id="addToCartBtn"
                 className="btn btn-success my-2"
                 onClick={onAdd}
                 disabled={quantity === 0}

@@ -96,7 +96,7 @@ export const Checkout = () => {
                             value={values.name}
                             className="form-control my-2"
                             type="text"
-                            placeholder="nombre"
+                            placeholder="Nombre"
                         />
                         {values.name.length < 4 && <small>Nombre inválido</small>}
 
@@ -106,7 +106,7 @@ export const Checkout = () => {
                             value={values.surname}
                             className="form-control my-2"
                             type="text"
-                            placeholder="apellido"
+                            placeholder="Apellido"
                         />
                         {values.surname.length < 4 && <small>Apellido inválido</small>}
 
@@ -116,7 +116,7 @@ export const Checkout = () => {
                             value={values.email}
                             className="form-control my-2"
                             type="email"
-                            placeholder="email"
+                            placeholder="Email"
                         />
                         {values.email.length < 4 && <small>Email inválido</small>}
 
